@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <title>code notes </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">code notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quizes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Welcome to website</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="container center my-3">
+        <center>
+            <h1>Welcome to code notes</h1>
+            <p>Here I will be uploading my notes of </p>
+        </center>
+    </div>
+    <div class="container mb-3">
+        <center>
+            <h2>Language is C++ </h2>
+        </center>
+        <h3>Basic code of C++</h3>
+        <pre class="language-cpp">
+            <code>
+#include &lt;iostrem>
+using namspace std;
+
+int main(){
+    return 0;
+}
+            </code>
+        </pre>
+        <hr>
+        <h3>Variables</h3>
+        <hr>
+        <p>Variables are the type of container which stores the value what we define.</p>
+        <pre class="language-cpp">
+            <code>
+#include &lt;iostrem>
+int main(){
+    int a = 2;
+    std::cout&lt;&lt; a;
+    return 0;
+}
+    </code>
+    </pre>
+    here <strong>int</strong> is the reserved keyword which tell us which type of Variable you want to define <br> and a is the Variable name which contain value <strong>2.</strong>
+    <hr>
+    <h3>Data Types </h3>
+    <center><img src="/img/data_type.PNG" alt="data_type"></center>
+    <strong>Data types with there memory spaces</strong>
+    <center><img src="/img/data_size.jpg" alt="" height="400"></center>
+    <hr>
+    <h3>Header Files and Operator</h3>
+    <pre class="language-cpp"><code>
+#include&lt;iostream>
+// there are two types of header files 
+// 1. System header files:It comes with the compiler
+// 2. user defined header files It is written by the programmer
+// #include"this.h"
+// ooperators in C++
+using namespace std;
+
+int main(){
+    int a=4 , b=5;
+    cout&lt;&lt; "folling are the types of operators in C++"&lt;&lt; endl;
+    // Arithmetic operators
+    cout&lt;&lt; endl;
+    cout&lt;&lt; "Arthmetic operators: \n";
+    cout&lt;&lt;"The vlaue of a + b "&lt;&lt;a+b&lt;&lt; endl;
+    cout&lt;&lt;&lt;&lt;"The vlaue of a - b "&lt;&lt;&lt;&lt;a-b&lt;&lt;&lt;&lt; endl;
+    cout&lt;&lt;&lt;&lt;"The vlaue of a * b "&lt;&lt;&lt;&lt;a*b&lt;&lt; endl;
+    cout&lt;&lt;"The vlaue of a / b "&lt;&lt;a/b&lt;&lt; endl;
+    cout&lt;&lt;"The vlaue of a % b "&lt;&lt;a%b&lt;&lt; endl;
+    cout&lt;&lt;"The vlaue of a++ "&lt;&lt;a++&lt;&lt; endl;
+    cout&lt;&lt;"The vlaue of a-- "&lt;&lt;a--&lt;&lt; endl;
+    cout&lt;&lt;"The vlaue of ++a "&lt;&lt;++a&lt;&lt; endl;
+    cout&lt;&lt;"The vlaue of --a "&lt;&lt;--a&lt;&lt; endl;
+    cout&lt;&lt;"-------------------------------\n\n";
+
+    // Asignment operators --> used to assign vlaues to varibale
+    // int c = 3 , e=9;
+    // char d = 'd';
+
+    // Comparison operators -->use to compare the value of varibles
+    cout&lt;&lt;"comparison operators: \n";
+    cout&lt;&lt;"The vlaue of a == b is "&lt;&lt;(a==b)&lt;&lt;endl;
+    cout&lt;&lt;"The vlaue of a > b is "&lt;&lt;(a>b)&lt;&lt;endl;
+    cout&lt;&lt;"The vlaue of a &lt; b is "&lt;&lt;(a&lt;b)&lt;&lt;endl;
+    cout&lt;&lt;"The vlaue of a &lt;= b is "&lt;&lt;(a&lt;=b)&lt;&lt;endl;
+    cout&lt;&lt;"The vlaue of a >= b is "&lt;&lt;(a>=b)&lt;&lt;endl;
+    cout&lt;&lt;"The vlaue of a != b is "&lt;&lt;(a!=b)&lt;&lt;endl;
+
+    // Logical operators --> && -> and operator || -> or operator ! --> not operator
+    cout&lt;&lt;"Logical operators: \n";
+    cout&lt;&lt;"The vlaue of a == b '&&' a&lt;b is "&lt;&lt;((a==b) && (a&lt;b))&lt;&lt; endl;
+    cout&lt;&lt;"The vlaue of a == b '||' a&lt;b is "&lt;&lt;((a==b) || (a&lt;b))&lt;&lt; endl;
+    cout&lt;&lt;"The vlaue of !(a == b) is "&lt;&lt;(!(a==b))&lt;&lt;endl;
+
+    return 0;
+}
+    </code></pre>
+    <hr>
+    <h3>Global and local scope</h3>
+    <pre class="language-cpp"><code>
+#include&lt;iostream>
+using namespace std;
+
+int glo=6; // this is a global variable
+void sum(){
+    int a;
+    cout&lt;&lt;glo;
+}
+int main(){
+    int glo=9; // this is a local varibale which is access or changed in the function
+    glo=78;
+    int a = 14;
+    int b= 15;
+    sum();
+    cout&lt;&lt;"This tutorial 4 "&lt;&lt;a&lt;&lt;" "&lt;&lt;b&lt;&lt;"\n";
+    cout&lt;&lt;glo;
+    return 0;
+}
+    </code></pre>
+    <hr>
+    <h3>Input and output</h3>
+    <pre class="language-cpp">
+        <code>
+#include&lt;iostream>
+using namespace std;
+
+int main(){
+    int num1,num2;
+    cout&lt;&lt;"Enter the vlaue of num1\n";// '&lt;&lt;' this is called insertion operator
+    cin>>num1; // '>>' this is called extraction operator
+    cout&lt;&lt;"Enter the vlaue of num2\n";
+    cin>>num2; 
+    cout&lt;&lt;"the sum is "&lt;&lt; num1+num2;
+    // input is taken by cin and output is gven by cout
+    return 0;
+}
+        </code>
+    </pre>
+    <hr>
+    <h3>Reference Variable and Typecasting</h3>
+    <pre class="language-cpp">
+        <code>
+#include&lt;iostream>
+using namespace std;
+
+int c = 45;
+// :: ---> is scope resoluion operator
+int main(){
+    // ************************Build in Data Types***************
+    int a,b,c;
+    cout&lt;&lt;"Enter the vlaue of a:"&lt;&lt;endl;
+    cin>>a;
+    cout&lt;&lt;"Enter the vlaue of b:"&lt;&lt;endl;
+    cin>>b;
+    c = a+b;
+    cout&lt;&lt;"The sum is "&lt;&lt;c&lt;&lt;endl;
+    cout&lt;&lt;"The vlaue of global varibale C is "&lt;&lt;::c&lt;&lt;endl;
+
+    // *******float , double and long double Literals in Data Types********
+    float d = 34.4f;
+    long double e = 34.4l;
+    cout&lt;&lt;"The size of 34.4 is "&lt;&lt;sizeof(34.4)&lt;&lt;endl;
+    cout&lt;&lt;"The size of 34.4f is "&lt;&lt;sizeof(34.4f)&lt;&lt;endl;
+    cout&lt;&lt;"The size of 34.4F is "&lt;&lt;sizeof(34.4F)&lt;&lt;endl;
+    cout&lt;&lt;"The size of 34.4l is "&lt;&lt;sizeof(34.4l)&lt;&lt;endl;
+    cout&lt;&lt;"The size of 34.4L is "&lt;&lt;sizeof(34.4L)&lt;&lt;endl;
+    cout&lt;&lt;"The value of d is "&lt;&lt;d&lt;&lt;endl;
+    cout&lt;&lt;"The value of e is "&lt;&lt;e&lt;&lt;endl;
+
+    // ************************Reference Varibale***************
+    float x = 455;
+    float & y=x;
+    cout&lt;&lt;x&lt;&lt;endl;
+    cout&lt;&lt;y;
+
+    // ************************Typecasting***************
+    int z = 45;
+    float p = 45.46;
+    cout&lt;&lt;"The vlaue of z is"&lt;&lt;(float)z&lt;&lt;endl;
+    cout&lt;&lt;"The vlaue of p is"&lt;&lt;(float)p&lt;&lt;endl;
+    // both the ways are same 
+    cout&lt;&lt;"The vlaue of z is"&lt;&lt;float(z)&lt;&lt;endl;
+    cout&lt;&lt;"The vlaue of p is"&lt;&lt;float(p)&lt;&lt;endl;
+
+    int o = int(p);
+    cout&lt;&lt;"The expression is "&lt;&lt;z+p&lt;&lt;endl;
+    cout&lt;&lt;"The expression is "&lt;&lt;z+int(p)&lt;&lt;endl;
+    return 0;
+}
+        </code>
+    </pre>
+
+    <hr>
+    <h3>Constant Manipulation and operator Precedence</h3>
+    <pre class="language-cpp">
+        <code>
+#include&lt;iostream>
+#include&lt;iomanip>
+using namespace std;
+
+int main(){
+    int a = 34;
+    cout&lt;&lt;"the vlaue of a was: "&lt;&lt;a&lt;&lt;endl;
+    a = 67;
+    cout&lt;&lt;"The vlaue of a is: "&lt;&lt;a&lt;&lt;endl;
+
+    //*********** constants in C++ to make constants we use const eg:
+    const int b = 3;
+    cout&lt;&lt;"The vlaue of a is: "&lt;&lt;b&lt;&lt;endl;
+
+    // Manipulators  used to pritfy the output
+    /* 
+    eg: endl , setw
+    */
+
+    int c = 3 ,d = 78, e=123;
+    // with setw include by iomap
+    cout&lt;&lt;"The vlaue of c is"&lt;&lt;setw(4)&lt;&lt;c&lt;&lt;endl;
+    cout&lt;&lt;"The vlaue of d is"&lt;&lt;setw(4)&lt;&lt;d&lt;&lt;endl;
+    cout&lt;&lt;"The vlaue of e is"&lt;&lt;setw(4)&lt;&lt;e&lt;&lt;endl;
+
+    // without setw 
+    cout&lt;&lt;"The vlaue of c is "&lt;&lt;c&lt;&lt;endl;
+    cout&lt;&lt;"The vlaue of d is "&lt;&lt;d&lt;&lt;endl;
+    cout&lt;&lt;"The vlaue of e is "&lt;&lt;e&lt;&lt;endl;
+
+    // Operator Precedence
+    int x =4 , y=5;
+    int z = x*5+y;
+    cout&lt;&lt;z&lt;&lt;endl;
+
+    return 0;
+}
+        </code>
+    </pre>
+    <hr>
+    <h3>If-else statment and switch cases</h3>
+    <pre class="language-cpp">
+        <code>
+#include&lt;iostream>
+using namespace std;
+
+int main(){
+    int age;
+    cout&lt;&lt;"Tell me your age"&lt;&lt;endl;
+    cin>>age;
+
+    // if , else if ,else ladder
+    if ((age<18) && (age>0)){
+        cout&lt;&lt;"you cannot come to party"&lt;&lt;endl;
+    }
+    else if (age==18){
+        cout&lt;&lt;"You can come to the party"&lt;&lt;endl;
+    }
+    else if (age<=0)
+    {
+        cout&lt;&lt;"You are not yet born!"&lt;&lt;endl;
+    }
+    
+    else{
+        cout&lt;&lt;"You can to the party"&lt;&lt;endl;
+    }
+    
+    //switch case
+    switch (age){
+    case 18:
+        cout&lt;&lt;"You are 18"&lt;&lt;endl;
+        break;
+
+    case 22:
+        cout&lt;&lt;"You are 22"&lt;&lt;endl;
+        break;
+
+    case 2:
+        cout&lt;&lt;"You are 18"&lt;&lt;endl;
+        break;
+    
+    default:
+        cout&lt;&lt;"No special cases"&lt;&lt;endl;
+        break;
+    }
+    
+    return 0;
+}
+        </code>
+    </pre>
+    <hr>
+    <h3>Loops statment</h3>
+    <pre class="language-cpp">
+        <code>
+#include&lt;iostream>
+using namespace std;
+
+int main(){
+    /* Loops in C++
+    There are three types of loops
+    1. For loop
+    2. Whle loop
+    3. do-while loop
+    */
+
+    /* For loop  */
+    /*
+    Syntax of for loop
+    for(initializtion; condition; updations){
+        loop body(C++ code)
+    }
+    for eg: 
+    */
+
+    for (int i = 0; i < 4; i++){
+        /* code */
+        cout&lt;&lt;i&lt;&lt;endl;
+    }
+
+
+    /* While loop  */
+    /*
+    Syntax of while loop
+    int i = 9 --> initialization
+    while(condition){
+        code
+        i++;/i--; ---> updation
+    }
+    for eg: 
+    */
+    int j = 1;
+    while(j<=40){
+        cout&lt;&lt;j&lt;&lt;endl;
+        j++;
+    }
+
+    /*
+    Syntax of do-while loop
+    this will run one time even if condtion is fasle
+    do{
+        *code*
+    }while(condition);
+    for eg: 
+    */
+
+    int x=1;
+    do
+    {
+        /* code */
+        cout&lt;&lt;x&lt;&lt;endl;
+        x++;
+    } while (x<=40);
+    
+
+    return 0;
+}
+        </code>
+    </pre>
+    <hr>
+    <h3>Break and continue</h3>
+    <pre class="language-cpp">
+        <code>
+#include&lt;iostream>
+using namespace std;
+
+int main(){
+    // for (int i = 0; i < 4; i++)
+    // {
+    //     cout&lt;&lt;i&lt;&lt;endl;
+    //     if(i==2){
+    //         break;
+    //     }
+    // }
+    for (int i = 0; i < 40; i++)
+    {
+        if(i==2){
+            continue;
+        }
+        cout&lt;&lt;i&lt;&lt;endl;
+    }
+    
+    return 0;
+}
+        </code>
+    </pre>
+    <hr>
+    <h3>Pointers</h3>
+    <pre class="language-cpp">
+        <code>
+#include&lt;iostream>
+using namespace std;
+
+int main(){
+    // waht is a pointers? ---> it is a data types which holds the address of other data types
+    int a=3;
+    int* b = &a;
+    // & ---> (address of) operators
+    cout&lt;&lt;"The address of a is "&lt;&lt;&a&lt;&lt;endl;
+    cout&lt;&lt;"The address of a is "&lt;&lt;b&lt;&lt;endl;
+
+    // * ---> (value at) derefence operator
+    cout&lt;&lt;"The value of addres b "&lt;&lt;*b&lt;&lt;endl;
+
+    // pointer to pointer 
+    int** c = &b;
+    cout&lt;&lt;"The address of b is "&lt;&lt;&b&lt;&lt;endl;
+    cout&lt;&lt;"The address of b is "&lt;&lt;c&lt;&lt;endl;
+    cout&lt;&lt;"The value at address c is "&lt;&lt;*c&lt;&lt;endl;
+    cout&lt;&lt;"The value at address value_at(value_at(c)) is "&lt;&lt;**c&lt;&lt;endl;
+    return 0;
+}
+        </code>
+    </pre>
+    <hr>
+    <h3>Arrays and arrays with pointer</h3>
+    <pre class="language-cpp">
+        <code>
+#include&lt;iostream>
+using namespace std;
+
+int main(){
+    // waht is a pointers? ---> it is a data types which holds the address of other data types
+    int a=3;
+    int* b = &a;
+    // & ---> (address of) operators
+    cout&lt;&lt;"The address of a is "&lt;&lt;&a&lt;&lt;endl;
+    cout&lt;&lt;"The address of a is "&lt;&lt;b&lt;&lt;endl;
+
+    // * ---> (value at) derefence operator
+    cout&lt;&lt;"The value of addres b "&lt;&lt;*b&lt;&lt;endl;
+
+    // pointer to pointer 
+    int** c = &b;
+    cout&lt;&lt;"The address of b is "&lt;&lt;&b&lt;&lt;endl;
+    cout&lt;&lt;"The address of b is "&lt;&lt;c&lt;&lt;endl;
+    cout&lt;&lt;"The value at address c is "&lt;&lt;*c&lt;&lt;endl;
+    cout&lt;&lt;"The value at address value_at(value_at(c)) is "&lt;&lt;**c&lt;&lt;endl;
+    return 0;
+}
+        </code>
+    </pre>
+    <hr>
+    <h3>structure , union and enum</h3>
+    <pre class="language-cpp">
+        <code>
+#include&lt;iostream>
+using namespace std;
+
+/* *********************Structure******************************** */
+// structure is used to store differnent data types for eg:
+//** typedef: gisko mai pahle struct employee se accesss kar raha tha uska data banane ke liye ab main usko short name de sakta hu.. jase at last ep is written for struct employee
+// syntax:
+typedef struct employee{
+    int eId;
+    char favchar;
+    float salary;
+}ep;
+
+// ***************union*************
+// union is used for (optimizing the code) / (better momery management )
+// in below eg nuion money is created which three data types int , char,float. it is different from sturcture becouae we can only access one data type!!!
+union money{
+    int rice;
+    char car;
+    float pounds;
+};
+int main(){
+    // ******stucture*******
+    // creatring a instance of (struct employee aman)
+    // naromaly :struct employee aman;
+    // alternative 
+    ep aman;
+    // adding data to it
+    aman.eId =1;
+    aman.favchar = 'c';
+    aman.salary = 12000;
+
+    //printing the data
+    cout&lt;&lt;"Id of aman: "&lt;&lt;aman.eId&lt;&lt;endl;
+    cout&lt;&lt;"aman's favourate charcater: "&lt;&lt;aman.favchar&lt;&lt;endl;
+    cout&lt;&lt;"aman's salary is :"&lt;&lt;aman.salary&lt;&lt;endl;
+
+    //****union****
+    union money m1;
+    m1.rice = 34;
+    cout&lt;&lt;m1.rice&lt;&lt;endl;
+
+    enum Meal{BreakFast, luch,dinner};
+    Meal meal1 = BreakFast;
+    cout&lt;&lt;meal1&lt;&lt;endl;
+    // cout&lt;&lt;BreakFast&lt;&lt;endl;
+    // cout&lt;&lt;luch&lt;&lt;endl;
+    // cout&lt;&lt;dinner&lt;&lt;endl;
+
+    return 0;
+
+
+}
+        </code>
+    </pre>
+    <hr>
+    <h3>Fuctions and prototype</h3>
+    <pre class="language-cpp">
+        <code>
+#include&lt;iostream>
+using namespace std;
+
+// function prototype
+
+// type fucntion-name (arguments);
+// int sum(int a ,int b); --> Acceptable
+// int sum(int ,int); --> Acceptable
+// int sum(int a ,b); --> Not Acceptable
+int sum(int a ,int b);
+void g(void);
+int main(){
+    int num1,num2;
+    cout&lt;&lt;"Enter first number:"&lt;&lt;endl;
+    cin>>num1;
+    cout&lt;&lt;"Enter second number:"&lt;&lt;endl;
+    cin>>num2;
+    // num1 and num2 are actual parameters
+    cout&lt;&lt;"The sum is "&lt;&lt;sum(num1,num2);
+    g();
+    return 0;
+}
+
+int sum(int a, int b){
+    // fromal parmameters a and b will be taking values from actual paramenters num1,num2
+    int c = a+b;
+    return c;
+}
+
+void g(){
+    cout&lt;&lt;"\nGood Morining "&lt;&lt;endl;
+}
+        </code>
+    </pre>
+</div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+<script src="js/prism.js"></script>
+
+</html>
